@@ -1,0 +1,33 @@
+{
+  "inbounds": [{
+    "port": 443,
+    "protocol": "vless",
+    "settings": {
+      "clients": [{
+        "id": "1b6b3c4e-3542-497e-91b5-0f87a0efc256",
+        "level": 0,
+        "email": "user@railway.app"
+      }],
+      "decryption": "none"
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "certificates": [
+          {
+            "certificateFile": "/etc/xray/self.crt",
+            "keyFile": "/etc/xray/self.key"
+          }
+        ]
+      },
+      "wsSettings": {
+        "path": "/vless"
+      }
+    }
+  }],
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  }]
+}
