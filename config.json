@@ -12,15 +12,7 @@
     },
     "streamSettings": {
       "network": "ws",
-      "security": "tls",
-      "tlsSettings": {
-        "certificates": [
-          {
-            "certificateFile": "/etc/xray/self.crt",
-            "keyFile": "/etc/xray/self.key"
-          }
-        ]
-      },
+      "security": "none",
       "wsSettings": {
         "path": "/vless"
       }
